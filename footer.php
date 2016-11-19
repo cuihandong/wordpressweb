@@ -9,10 +9,11 @@
 
 </div><!-- container -->
 <div id="footer">
-
+<!-- remove background of social
 <div class="versep"></div>
+-->
 <div id="footer-content">
-
+<!--
 <div id="social">
 <?php  if (esc_url(simplify_get_option('facebook-link', '#')) !='') : ?>
 <a href="<?php echo esc_url(simplify_get_option('facebook-link', '#')); ?>" class="facebook-link" target="_blank"></a>
@@ -30,10 +31,10 @@
 <a href="<?php echo esc_url(simplify_get_option('feed-link', '#')); ?>" class="feed-link" target="_blank"></a>
 <?php  endif; ?>
 </div>
-
+-->
 <?php 	get_sidebar( 'footer' ); ?>
 <div class="clear"></div>
-<div id="creditline"><?php echo '&copy; ' . date("Y"). ': ' . get_bloginfo( 'name' ) . '  '; simplify_creditline(); ?></div>
+<div id="creditline"><?php echo '&copy; ' . date("Y"). ': ' . get_bloginfo( 'name' ) . '  ';  ?></div>
 </div> <!-- footer-content -->
 </div> <!-- footer -->
 <?php wp_footer(); ?>
